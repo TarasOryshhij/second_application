@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavFooterStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_made"
+        style="@style/NavTextFooterBlackStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_with_love"/>
+
+    <TextView
+        android:id="@+id/tv_it_ruh"
+        style="@style/NavTextFooterMangoStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_made"
+        android:text="@string/nav_it_ruh"/>
+
+    <TextView
+        android:id="@+id/tv_and"
+        style="@style/NavTextFooterBlackStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_it_ruh"
+        android:layout_toRightOf="@+id/tv_it_ruh"
+        android:text="@string/nav_and"/>
+
+    <TextView
+        android:id="@+id/tv_yalantis"
+        style="@style/NavTextFooterMangoStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_it_ruh"
+        android:layout_toRightOf="@+id/tv_and"
+        android:text="@string/nav_yalantis"/>
+
+</RelativeLayout>

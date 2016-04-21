@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Navigation View style. -->
+    <style name="NavHeaderStyle">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="NavViewStyle">
+        <item name="android:fontFamily">"sans-serif-medium"</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="NavViewStyle2">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="headerLayout">@layout/nav_header_main</item>
+        <item name="menu">@menu/activity_main_drawer</item>
+        <item name="itemTextColor">@color/black</item>
+        <item name="itemIconTint">@color/nav_icon_tint_selector</item>
+    </style>
+
+    <style name="NavFooterStyle">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="NavTextFooterBlackStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="NavTextFooterMangoStyle">
+        <item name="android:textColor">@color/mango</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="NavHeaderTextStyle" >
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white_three</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.69</item>
+    </style>
+
+    <!-- Item style. -->
+    <style name="RelativeItemStyle" >
+        <item name="android:background">@color/colorFon</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="layout_behavior">@string/appbar_scrolling_view_behavior</item>
+    </style>
+
+    <style name="ItemIconStyle" >
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="LikeTextStyle" >
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:alpha">0.23</item>
+    </style>
+
+    <style name="TitleTextStyle" >
+        <item name="android:lines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:ems">3</item>
+        <item name="android:layout_marginBottom">@dimen/item_title_margin_bottom</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:alpha">0.87</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="StreetTextStyle" >
+        <item name="android:ellipsize">end</item>
+        <item name="android:ems">3</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="DateTextStyle" >
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.54</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <!--ItemActivity. -->
+    <style name="TaskView">
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:background">@color/colorLine</item>
+    </style>
+
+    <style name="TextViewRight">
+        <item name="android:gravity">right</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextTitleStyle">
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextStatus">
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="RecyclerItemStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:scrollbars">horizontal</item>
+
+    </style>
+
+    <!--FloatingActionButton. -->
+    <style name="FloatingBtnStyle">
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="srcCompat">@drawable/ic_plus</item>
+        <item name="backgroundTint">@color/mango</item>
+        <item name="layout_behavior">com.taras.secondapplication.ScrollingFABBehavior</item>
+    </style>
+
+    <!--Toolbar. -->
+    <style name="ToolbarStyle">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="layout_scrollFlags">scroll|enterAlways</item>
+        <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+        <item name="title">@string/tlb_all_appeals</item>
+    </style>
+
+    <style name="ToolbarItemStyle">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+        <item name="titleTextColor">@color/colorWhite</item>
+    </style>
+
+    <!--MainActivity. -->
+    <style name="TabLayoutStyle">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabIndicatorColor">@color/white_three</item>
+    </style>
+
+    <style name="RecyclerStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/item_margin</item>
+        <item name="android:layout_marginRight">@dimen/item_margin</item>
+        <item name="android:scrollbars">horizontal</item>
+    </style>
+
+    <style name="LinearStyle">
+        <item name="android:background">@drawable/ic_gradient</item>
+    </style>
+
+    <style name="ListViewStyle">
+        <item name="android:layout_marginLeft">@dimen/item_margin</item>
+        <item name="android:layout_marginRight">@dimen/item_margin</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="LineaerItemStyle">
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+
+</resources>

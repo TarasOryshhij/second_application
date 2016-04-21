@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">SecondApplication</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Navigation View. -->
+    <string name="nav_open">Open navigation drawer</string>
+    <string name="nav_close">Close navigation drawer</string>
+    <string name="nav_all_appeal">Всi звернення</string>
+    <string name="nav_appeal_on_map">Звернення на мапi</string>
+    <string name="nav_login_to_account">Увiйти в аккаунт</string>
+    <string name="nav_econtact">e-contact</string>
+    <string name="nav_with_love">Зроблено з любов\'ю</string>
+    <string name="nav_it_ruh"><u>IT Ruh Dnipro</u></string>
+    <string name="nav_and">" та "</string>
+    <string name="nav_yalantis"><u>Yalantis</u></string>
+
+    <!-- TabLayout. -->
+    <string name="tab_in_work">В роботi</string>
+    <string name="tab_complete">Виконано</string>
+    <string name="tab_expects">Очiкує</string>
+
+    <!-- Toolbar. -->
+    <string name="tlb_title">ЖИ-1263246</string>
+    <string name="tlb_all_appeals">Всi звернення</string>
+
+    <!-- Recycler View. -->
+    <string name="rec_day">" днiв"</string>
+    <string name="rec_first_image">http://dl1.joxi.net/drive/0011/3877/753445/160321/6bdec852e5.jpg</string>
+    <string name="rec_second_image">http://dl1.joxi.net/drive/0011/3877/753445/160321/a2949df589.jpg</string>
+
+    <!-- ItemActivity. -->
+    <string name="itm_created">Створено</string>
+    <string name="itm_registered">Зареєстровано</string>
+    <string name="itm_resolve">Вирiшити до</string>
+    <string name="itm_responsible">Вiдповiдальний</string>
+    <string name="itm_register_date">26 лютого 2016</string>
+    <string name="itm_resolve_date">29 лютого 2016</string>
+    <string name="itm_responsible_text">Днiпропетровський МВК()</string>
+    <string name="itm_note">Открытый люк (возле рекламного счита), район поворота 18 и 19 трамваев на проспект Мира с Донецкого шоссе</string>
+
+    <!-- DataManager. -->
+    <string name="dtm_title1">Комунальне господарство</string>
+    <string name="dtm_title2">Скарги на гарячу лiнiю</string>
+    <string name="dtm_title3">Комунальне господарство</string>
+    <string name="dtm_title4">Екологiя та природнi ресурси</string>
+    <string name="dtm_title5">Комунальне господарство5</string>
+    <string name="dtm_title6">Комунальне господарство6</string>
+    <string name="dtm_title7">Комунальне господарство7</string>
+    <string name="dtm_title8">Комунальне господарство8</string>
+    <string name="dtm_title9">Комунальне господарство9</string>
+    <string name="dtm_title10">Комунальне господарство10</string>
+    <string name="dtm_street1">Колгоспна, 7</string>
+    <string name="dtm_street2">Ленiна, 147</string>
+    <string name="dtm_street3">Академiка Янгеля, 22</string>
+    <string name="dtm_street4">Теплична, 3</string>
+    <string name="dtm_street5">street2</string>
+    <string name="dtm_street6">street2</string>
+    <string name="dtm_street7">street2</string>
+    <string name="dtm_street8">street2</string>
+    <string name="dtm_street9">street2</string>
+    <string name="dtm_street10">street2</string>
+    <string name="dtm_date1">Квiт. 13, 2016</string>
+    <string name="dtm_date2">Квiт. 13, 2016</string>
+    <string name="dtm_date3">Квiт. 13, 2016</string>
+    <string name="dtm_date4">Квiт. 12, 2016</string>
+    <string name="dtm_date5">date2</string>
+    <string name="dtm_date6">date2</string>
+    <string name="dtm_date7">date2</string>
+    <string name="dtm_date8">date2</string>
+    <string name="dtm_date9">date2</string>
+    <string name="dtm_date10">date2</string>
+</resources>
