@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class ListAdapter extends BaseAdapter {
 
     private Context mContext;
-    private ArrayList<CardModel> mCardModelArrayList = new ArrayList<>();
+    private ArrayList<CardModel> mCardModelArrayList = new ArrayList<>(); //[Comment] Use abstraction instead of realization
     private String mStatus;
 
     public ListAdapter(Context context, ArrayList<CardModel> cardModelArrayList, String status) {

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 
-    private ArrayList<CardModel> mArrCardModel = new ArrayList<>();
+    private ArrayList<CardModel> mArrCardModel = new ArrayList<>(); //[Comment] Use abstraction instead of realization
     private String mStatus;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -63,7 +63,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         holder.tvStreet.setText(mArrCardModel.get(position).getStreet());
         holder.tvLike.setText(mArrCardModel.get(position).getCountLike() + "");
         holder.tvDate.setText(mArrCardModel.get(position).getDate());
-        holder.tvDay.setText(mArrCardModel.get(position).getDay() + "" + holder.tvDay.getContext().getString(R.string.rec_day));
+        holder.tvDay.setText(mArrCardModel.get(position).getDay() + "" + holder.tvDay.getContext().getString(R.string.rec_day)); //[Comment] use string.format
 
         holder.cv.setOnClickListener(new View.OnClickListener() {
             @Override

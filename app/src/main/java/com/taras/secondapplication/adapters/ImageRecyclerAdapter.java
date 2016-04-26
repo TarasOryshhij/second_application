@@ -32,7 +32,7 @@ public class ImageRecyclerAdapter extends RecyclerView.Adapter<ImageRecyclerAdap
     // Create new views (invoked by the layout manager)
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        // create a new view
+        // create a new view //[Comment] Don't write obvious comments
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.image, parent, false);
         // set the view's size, margins, paddings and layout parameters
         return new ViewHolder(v);

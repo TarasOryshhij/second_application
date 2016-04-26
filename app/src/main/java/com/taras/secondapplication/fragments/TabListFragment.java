@@ -20,7 +20,7 @@ import com.taras.secondapplication.events.VisibleFabEvent;
 public class TabListFragment extends Fragment {
 
     private View mRootView;
-    private int mLastFirstVisibleItem = 0;
+    private int mLastFirstVisibleItem = 0; //[Comment] 0 is default for int
     private ListView mListView;
 
     @Nullable

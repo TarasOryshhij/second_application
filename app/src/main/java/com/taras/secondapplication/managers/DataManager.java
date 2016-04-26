@@ -31,7 +31,7 @@ public class DataManager {
         CardModel cardModel9 = new CardModel(1, mContext.getString(R.string.dtm_title9), mContext.getString(R.string.dtm_street9), mContext.getString(R.string.dtm_date9), 6);
         CardModel cardModel10 = new CardModel(1, mContext.getString(R.string.dtm_title10), mContext.getString(R.string.dtm_street10), mContext.getString(R.string.dtm_date10), 6);
 
-        ArrayList<CardModel> arrCardModel = new ArrayList<>();
+        ArrayList<CardModel> arrCardModel = new ArrayList<>(); //[Comment] Use abstraction instead of realization
         arrCardModel.add(cardModel1);
         arrCardModel.add(cardModel2);
         arrCardModel.add(cardModel3);

@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState); //[Comment] Bad practice. Do you know how event bus works?
+                                            // I suggest to use callbacks for connection between Fragment
+                                            // and Activity
         BusStation.getBus().register(this);
         setContentView(R.layout.activity_main);
 

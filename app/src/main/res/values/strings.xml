@@ -25,6 +25,7 @@
 
     <!-- Recycler View. -->
     <string name="rec_day">" днiв"</string>
+    <!-- [Comment] Use plurals for days -->
     <string name="rec_first_image">http://dl1.joxi.net/drive/0011/3877/753445/160321/6bdec852e5.jpg</string>
     <string name="rec_second_image">http://dl1.joxi.net/drive/0011/3877/753445/160321/a2949df589.jpg</string>
 

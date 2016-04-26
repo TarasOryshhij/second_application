@@ -34,7 +34,7 @@ public class TabRecyclerFragment extends Fragment {
     private void makeRecyclerView() {
         RecyclerView recyclerView = (RecyclerView) mRootView.findViewById(R.id.recycler_view1);
 
-        LinearLayoutManager llm = new LinearLayoutManager(getContext());
+        LinearLayoutManager llm = new LinearLayoutManager(getContext()); //[Comment] Llm bad name
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(llm);
 
