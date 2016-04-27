@@ -6,6 +6,7 @@ import com.taras.secondapplication.R;
 import com.taras.secondapplication.models.CardModel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class DataManager {
 
@@ -18,7 +19,7 @@ public class DataManager {
     /**
      * Make dataList for item ListView and RecyclerView.
      */
-    public ArrayList<CardModel> getDataList(){
+    public List<CardModel> getDataList(){
 
         CardModel cardModel1 = new CardModel(0, mContext.getString(R.string.dtm_title1), mContext.getString(R.string.dtm_street1), mContext.getString(R.string.dtm_date1), 10);
         CardModel cardModel2 = new CardModel(1, mContext.getString(R.string.dtm_title2), mContext.getString(R.string.dtm_street2), mContext.getString(R.string.dtm_date2), 10);
@@ -31,7 +32,7 @@ public class DataManager {
         CardModel cardModel9 = new CardModel(1, mContext.getString(R.string.dtm_title9), mContext.getString(R.string.dtm_street9), mContext.getString(R.string.dtm_date9), 6);
         CardModel cardModel10 = new CardModel(1, mContext.getString(R.string.dtm_title10), mContext.getString(R.string.dtm_street10), mContext.getString(R.string.dtm_date10), 6);
 
-        ArrayList<CardModel> arrCardModel = new ArrayList<>();
+        List<CardModel> arrCardModel = new ArrayList<>();
         arrCardModel.add(cardModel1);
         arrCardModel.add(cardModel2);
         arrCardModel.add(cardModel3);

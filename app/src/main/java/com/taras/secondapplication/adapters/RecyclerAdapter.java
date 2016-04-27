@@ -14,10 +14,11 @@ import com.taras.secondapplication.activity.ItemActivity;
 import com.taras.secondapplication.models.CardModel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 
-    private ArrayList<CardModel> mArrCardModel = new ArrayList<>();
+    private List<CardModel> mArrCardModel;
     private String mStatus;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -63,7 +64,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         holder.tvStreet.setText(mArrCardModel.get(position).getStreet());
         holder.tvLike.setText(mArrCardModel.get(position).getCountLike() + "");
         holder.tvDate.setText(mArrCardModel.get(position).getDate());
-        holder.tvDay.setText(mArrCardModel.get(position).getDay() + "" + holder.tvDay.getContext().getString(R.string.rec_day));
+        holder.tvDay.setText(holder.tvDay.getContext().getString(R.string.rec_duration_days, mArrCardModel.get(position).getDay()));
 
         holder.cv.setOnClickListener(new View.OnClickListener() {
             @Override

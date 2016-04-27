@@ -11,22 +11,22 @@ import android.widget.AbsListView;
 import android.widget.ListView;
 
 import com.taras.secondapplication.App;
-import com.taras.secondapplication.BusStation;
 import com.taras.secondapplication.Const;
 import com.taras.secondapplication.R;
 import com.taras.secondapplication.adapters.ListAdapter;
-import com.taras.secondapplication.events.VisibleFabEvent;
 
 public class TabListFragment extends Fragment {
 
     private View mRootView;
-    private int mLastFirstVisibleItem = 0;
+    private int mLastFirstVisibleItem;
     private ListView mListView;
+    private FabCallbacks mFabCallbacks;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        BusStation.getBus().register(this);
+        mFabCallbacks = (FabCallbacks) getActivity();
+
         mRootView = inflater.inflate(R.layout.fragment_tab_list, container, false);
 
         makeListView();
@@ -61,9 +61,9 @@ public class TabListFragment extends Fragment {
                 if (view.getId() == mListView.getId()) {
 
                     if (firstVisibleItem > mLastFirstVisibleItem) {
-                        BusStation.getBus().post(new VisibleFabEvent(false));
+                        mFabCallbacks.onVisibleFab(false);
                     } else if (firstVisibleItem < mLastFirstVisibleItem) {
-                        BusStation.getBus().post(new VisibleFabEvent(true));
+                        mFabCallbacks.onVisibleFab(true);
                     }
 
                     mLastFirstVisibleItem = firstVisibleItem;
@@ -72,9 +72,7 @@ public class TabListFragment extends Fragment {
         });
     }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        BusStation.getBus().unregister(this);
+    public interface FabCallbacks {
+        void onVisibleFab(boolean visible);
     }
 }

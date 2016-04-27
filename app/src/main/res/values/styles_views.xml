@@ -44,6 +44,13 @@
     </style>
 
     <!-- Item style. -->
+    <style name="ItemStyle" >
+        <item name="android:paddingTop">@dimen/item_margin</item>
+        <item name="android:paddingLeft">@dimen/item_margin</item>
+        <item name="android:paddingRight">@dimen/item_margin</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
     <style name="RelativeItemStyle" >
         <item name="android:background">@color/colorFon</item>
         <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
@@ -166,8 +173,6 @@
     </style>
 
     <style name="ListViewStyle">
-        <item name="android:layout_marginLeft">@dimen/item_margin</item>
-        <item name="android:layout_marginRight">@dimen/item_margin</item>
         <item name="android:scrollbars">vertical</item>
     </style>
 

@@ -24,7 +24,7 @@
     <string name="tlb_all_appeals">Всi звернення</string>
 
     <!-- Recycler View. -->
-    <string name="rec_day">" днiв"</string>
+    <string name="rec_duration_days">%1$s днiв</string>
     <string name="rec_first_image">http://dl1.joxi.net/drive/0011/3877/753445/160321/6bdec852e5.jpg</string>
     <string name="rec_second_image">http://dl1.joxi.net/drive/0011/3877/753445/160321/a2949df589.jpg</string>
 
@@ -53,20 +53,20 @@
     <string name="dtm_street2">Ленiна, 147</string>
     <string name="dtm_street3">Академiка Янгеля, 22</string>
     <string name="dtm_street4">Теплична, 3</string>
-    <string name="dtm_street5">street2</string>
-    <string name="dtm_street6">street2</string>
-    <string name="dtm_street7">street2</string>
-    <string name="dtm_street8">street2</string>
-    <string name="dtm_street9">street2</string>
-    <string name="dtm_street10">street2</string>
+    <string name="dtm_street5">street5</string>
+    <string name="dtm_street6">street6</string>
+    <string name="dtm_street7">street7</string>
+    <string name="dtm_street8">street8</string>
+    <string name="dtm_street9">street9</string>
+    <string name="dtm_street10">street10</string>
     <string name="dtm_date1">Квiт. 13, 2016</string>
     <string name="dtm_date2">Квiт. 13, 2016</string>
     <string name="dtm_date3">Квiт. 13, 2016</string>
     <string name="dtm_date4">Квiт. 12, 2016</string>
-    <string name="dtm_date5">date2</string>
-    <string name="dtm_date6">date2</string>
-    <string name="dtm_date7">date2</string>
-    <string name="dtm_date8">date2</string>
-    <string name="dtm_date9">date2</string>
-    <string name="dtm_date10">date2</string>
+    <string name="dtm_date5">date5</string>
+    <string name="dtm_date6">date6</string>
+    <string name="dtm_date7">date7</string>
+    <string name="dtm_date8">date8</string>
+    <string name="dtm_date9">date9</string>
+    <string name="dtm_date10">date10</string>
 </resources>

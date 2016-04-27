@@ -15,14 +15,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.squareup.otto.Subscribe;
-import com.taras.secondapplication.BusStation;
 import com.taras.secondapplication.R;
 import com.taras.secondapplication.adapters.PagerAdapter;
-import com.taras.secondapplication.events.VisibleFabEvent;
+import com.taras.secondapplication.fragments.TabListFragment;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, TabListFragment.FabCallbacks {
 
     private DrawerLayout mDrawer;
     private FloatingActionButton mFab;
@@ -31,7 +29,6 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        BusStation.getBus().register(this);
         setContentView(R.layout.activity_main);
 
         initViews();
@@ -144,9 +141,9 @@ public class MainActivity extends AppCompatActivity
     /**
      * Hide Fab and Tollbar (if Api < 21)  on scroll in ListView.
      */
-    @Subscribe
-    public void visibleFab(VisibleFabEvent event){
-        if(event.isVisible()){
+    @Override
+    public void onVisibleFab(boolean visible) {
+        if(visible){
             mFab.show();
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
                 mAppBarLayout.setExpanded(true, true);
@@ -157,11 +154,5 @@ public class MainActivity extends AppCompatActivity
                 mAppBarLayout.setExpanded(false, true);
             }
         }
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        BusStation.getBus().unregister(this);
     }
 }

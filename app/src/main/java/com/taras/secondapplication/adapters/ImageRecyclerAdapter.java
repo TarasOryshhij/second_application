@@ -29,16 +29,12 @@ public class ImageRecyclerAdapter extends RecyclerView.Adapter<ImageRecyclerAdap
         mDataset = myDataset;
     }
 
-    // Create new views (invoked by the layout manager)
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        // create a new view
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.image, parent, false);
-        // set the view's size, margins, paddings and layout parameters
         return new ViewHolder(v);
     }
 
-    // Replace the contents of a view (invoked by the layout manager)
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
@@ -60,7 +56,7 @@ public class ImageRecyclerAdapter extends RecyclerView.Adapter<ImageRecyclerAdap
         });
     }
 
-    // Return the size of your dataset (invoked by the layout manager)
+    // Return the size of your dataset
     @Override
     public int getItemCount() {
         return mDataset.length;

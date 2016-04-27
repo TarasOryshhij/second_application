@@ -15,11 +15,12 @@ import com.taras.secondapplication.activity.ItemActivity;
 import com.taras.secondapplication.models.CardModel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListAdapter extends BaseAdapter {
 
     private Context mContext;
-    private ArrayList<CardModel> mCardModelArrayList = new ArrayList<>();
+    private List<CardModel> mCardModelArrayList;
     private String mStatus;
 
     public ListAdapter(Context context, ArrayList<CardModel> cardModelArrayList, String status) {
@@ -69,7 +70,8 @@ public class ListAdapter extends BaseAdapter {
         viewHolder.tvStreet.setText(getItem(position).getStreet());
         viewHolder.tvLike.setText(getItem(position).getCountLike() + "");
         viewHolder.tvDate.setText(getItem(position).getDate());
-        viewHolder.tvDay.setText(getItem(position).getDay() + viewHolder.tvDay.getContext().getString(R.string.rec_day));
+        viewHolder.tvDay.setText(viewHolder.tvDay.getContext().getString(R.string.rec_duration_days,getItem(position).getDay()));
+
 
         viewHolder.cv.setOnClickListener(new View.OnClickListener() {
             @Override
