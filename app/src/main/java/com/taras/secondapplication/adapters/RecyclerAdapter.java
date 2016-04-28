@@ -13,7 +13,6 @@ import com.taras.secondapplication.R;
 import com.taras.secondapplication.activity.ItemActivity;
 import com.taras.secondapplication.models.CardModel;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
@@ -41,7 +40,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         }
     }
 
-    public RecyclerAdapter(ArrayList<CardModel> arrCardModel, String status) {
+    public RecyclerAdapter(List<CardModel> arrCardModel, String status) {
         mArrCardModel = arrCardModel;
         mStatus = status;
     }

@@ -14,7 +14,6 @@ import com.taras.secondapplication.R;
 import com.taras.secondapplication.activity.ItemActivity;
 import com.taras.secondapplication.models.CardModel;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ListAdapter extends BaseAdapter {
@@ -23,7 +22,7 @@ public class ListAdapter extends BaseAdapter {
     private List<CardModel> mCardModelArrayList;
     private String mStatus;
 
-    public ListAdapter(Context context, ArrayList<CardModel> cardModelArrayList, String status) {
+    public ListAdapter(Context context, List<CardModel> cardModelArrayList, String status) {
         mContext = context;
         mCardModelArrayList = cardModelArrayList;
         mStatus = status;
