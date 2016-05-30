@@ -3,16 +3,18 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_all_appeal_item"
             android:icon="@drawable/ic_issues"
             android:title="@string/nav_all_appeal"/>
         <item
-            android:id="@+id/nav_appeal_map_item"
             android:icon="@drawable/ic_map"
             android:title="@string/nav_appeal_on_map"/>
+        <item
+            android:id="@+id/nav_profile_item"
+            android:icon="@drawable/ic_face"
+            android:title="@string/nav_profile"/>
     </group>
 
-    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+    <group android:id="@+id/grp" android:checkableBehavior="single" >
         <item
             android:id="@+id/nav_login_item"
             android:title="@string/nav_login_to_account" />

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activities.main.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <ScrollView
@@ -73,8 +73,7 @@
                     android:id="@+id/tv_reg_date"
                     style="@style/TextViewRight"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/itm_register_date"/>
+                    android:layout_height="wrap_content"/>
             </LinearLayout>
 
             <View
@@ -97,8 +96,7 @@
                     android:id="@+id/tv_resolve_date"
                     style="@style/TextViewRight"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/itm_resolve_date"/>
+                    android:layout_height="wrap_content"/>
             </LinearLayout>
 
             <View
@@ -118,22 +116,20 @@
                     android:text="@string/itm_responsible"/>
 
                 <TextView
-                    android:id="@+id/tv_resp_date"
+                    android:id="@+id/tv_resp_organization"
                     style="@style/TextViewRight"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/itm_responsible_text"/>
+                    android:layout_height="wrap_content"/>
             </LinearLayout>
 
             <TextView
                 android:id="@+id/tv_note"
                 style="@style/TextTitleStyle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/itm_note"/>
+                android:layout_height="wrap_content"/>
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/card_view"
+                android:id="@+id/rv_filename"
                 style="@style/RecyclerItemStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>

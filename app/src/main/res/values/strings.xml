@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">SecondApplication</string>
+    <string name="facebook_app_id">111950512553574</string>
     <string name="action_settings">Settings</string>
 
     <!-- Navigation View. -->
@@ -13,22 +14,23 @@
     <string name="nav_it_ruh"><u>IT Ruh Dnipro</u></string>
     <string name="nav_and">" та "</string>
     <string name="nav_yalantis"><u>Yalantis</u></string>
+    <string name="nav_profile">Мiй профайл</string>
 
     <!-- TabLayout. -->
-    <string name="tab_in_work">В роботi</string>
+    <string name="tab_in_work">В роботі</string>
     <string name="tab_complete">Виконано</string>
-    <string name="tab_expects">Очiкує</string>
+    <string name="tab_moderation">На модерації</string>
+    <string name="tab_no_addresses">Немає адреси</string>
 
     <!-- Toolbar. -->
-    <string name="tlb_title">ЖИ-1263246</string>
     <string name="tlb_all_appeals">Всi звернення</string>
+    <string name="tlb_no_ticket_id">немає ticked_id</string>
 
     <!-- Recycler View. -->
     <string name="rec_duration_days">%1$s днiв</string>
-    <string name="rec_first_image">http://dl1.joxi.net/drive/0011/3877/753445/160321/6bdec852e5.jpg</string>
-    <string name="rec_second_image">http://dl1.joxi.net/drive/0011/3877/753445/160321/a2949df589.jpg</string>
 
     <!-- ItemActivity. -->
+    <string name="itm_consideration">На розглядi</string>
     <string name="itm_created">Створено</string>
     <string name="itm_registered">Зареєстровано</string>
     <string name="itm_resolve">Вирiшити до</string>
@@ -39,34 +41,21 @@
     <string name="itm_note">Открытый люк (возле рекламного счита), район поворота 18 и 19 трамваев на проспект Мира с Донецкого шоссе</string>
 
     <!-- DataManager. -->
-    <string name="dtm_title1">Комунальне господарство</string>
-    <string name="dtm_title2">Скарги на гарячу лiнiю</string>
-    <string name="dtm_title3">Комунальне господарство</string>
-    <string name="dtm_title4">Екологiя та природнi ресурси</string>
-    <string name="dtm_title5">Комунальне господарство5</string>
-    <string name="dtm_title6">Комунальне господарство6</string>
-    <string name="dtm_title7">Комунальне господарство7</string>
-    <string name="dtm_title8">Комунальне господарство8</string>
-    <string name="dtm_title9">Комунальне господарство9</string>
-    <string name="dtm_title10">Комунальне господарство10</string>
-    <string name="dtm_street1">Колгоспна, 7</string>
-    <string name="dtm_street2">Ленiна, 147</string>
-    <string name="dtm_street3">Академiка Янгеля, 22</string>
-    <string name="dtm_street4">Теплична, 3</string>
-    <string name="dtm_street5">street5</string>
-    <string name="dtm_street6">street6</string>
-    <string name="dtm_street7">street7</string>
-    <string name="dtm_street8">street8</string>
-    <string name="dtm_street9">street9</string>
-    <string name="dtm_street10">street10</string>
-    <string name="dtm_date1">Квiт. 13, 2016</string>
-    <string name="dtm_date2">Квiт. 13, 2016</string>
-    <string name="dtm_date3">Квiт. 13, 2016</string>
-    <string name="dtm_date4">Квiт. 12, 2016</string>
-    <string name="dtm_date5">date5</string>
-    <string name="dtm_date6">date6</string>
-    <string name="dtm_date7">date7</string>
-    <string name="dtm_date8">date8</string>
-    <string name="dtm_date9">date9</string>
-    <string name="dtm_date10">date10</string>
+
+    <!--Toast.-->
+    <string name="tst_no_data">Помилка при отриманнi даних.</string>
+    <string name="tst_empty">пусто</string>
+
+    <!--ProfileActivity.-->
+    <string name="prf_name">name:</string>
+    <string name="prf_id">id:</string>
+    <string name="prf_email">email:</string>
+    <string name="prf_empty">пусто</string>
+
+    <!--DateUtils.-->
+    <string name="how_many_days_ago" translatable="false">%1$d %2$s тому</string>
+    <plurals name="days_plurals">
+        <item quantity="one">день</item>
+        <item quantity="other">днiв</item>
+    </plurals>
 </resources>

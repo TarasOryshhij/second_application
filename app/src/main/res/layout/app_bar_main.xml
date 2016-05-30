@@ -6,10 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".activities.main.MainActivity">
 
     <android.support.design.widget.AppBarLayout
-        android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
@@ -23,10 +22,9 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main_activity" android:id="@+id/rel"/>
+    <include layout="@layout/content_main_activity" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
         style="@style/FloatingBtnStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

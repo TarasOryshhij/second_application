@@ -12,4 +12,5 @@
     <!-- Rounded. -->
     <dimen name="rounded">10dp</dimen>
     <dimen name="radius">300dp</dimen>
+    <dimen name="avatar_size">60dp</dimen>
 </resources>

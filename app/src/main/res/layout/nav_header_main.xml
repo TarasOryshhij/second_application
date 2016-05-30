@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavHeaderStyle"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/nav_header_height"
-    style="@style/NavHeaderStyle">
+    android:layout_height="@dimen/nav_header_height">
 
     <TextView
-        android:id="@+id/textView"
+        style="@style/NavHeaderTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nav_econtact"
-        style="@style/NavHeaderTextStyle"/>
+        android:text="@string/nav_econtact" />
 
 </LinearLayout>

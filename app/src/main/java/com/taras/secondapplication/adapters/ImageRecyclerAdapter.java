@@ -10,11 +10,15 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
+import com.taras.secondapplication.Const;
 import com.taras.secondapplication.R;
+import com.taras.secondapplication.models.Files;
+
+import io.realm.RealmList;
 
 public class ImageRecyclerAdapter extends RecyclerView.Adapter<ImageRecyclerAdapter.ViewHolder> {
 
-    private String[] mDataset;
+    private RealmList<Files> mData;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
@@ -25,8 +29,8 @@ public class ImageRecyclerAdapter extends RecyclerView.Adapter<ImageRecyclerAdap
         }
     }
 
-    public ImageRecyclerAdapter(String[] myDataset) {
-        mDataset = myDataset;
+    public ImageRecyclerAdapter(RealmList<Files> myDataset) {
+        mData = myDataset;
     }
 
     @Override
@@ -41,12 +45,12 @@ public class ImageRecyclerAdapter extends RecyclerView.Adapter<ImageRecyclerAdap
         final Context context = holder.imageView.getContext();
 
         Picasso.with(context)
-                .load(Uri.parse(mDataset[position]))
+                .load(Const.URL_IMAGE+Uri.parse(mData.get(position).getFilename()))
                 .fit()
                 .centerCrop()
                 .into(holder.imageView);
 
-        final String message = mDataset[position];
+        final String message = mData.get(position).getId();
 
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +63,7 @@ public class ImageRecyclerAdapter extends RecyclerView.Adapter<ImageRecyclerAdap
     // Return the size of your dataset
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return mData.size();
     }
 }
 

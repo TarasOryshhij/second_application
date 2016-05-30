@@ -36,7 +36,7 @@
         <item name="android:textSize">12sp</item>
     </style>
 
-    <style name="NavHeaderTextStyle" >
+    <style name="NavHeaderTextStyle">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/white_three</item>
         <item name="android:textStyle">bold</item>
@@ -44,28 +44,28 @@
     </style>
 
     <!-- Item style. -->
-    <style name="ItemStyle" >
+    <style name="ItemStyle">
         <item name="android:paddingTop">@dimen/item_margin</item>
         <item name="android:paddingLeft">@dimen/item_margin</item>
         <item name="android:paddingRight">@dimen/item_margin</item>
         <item name="android:orientation">horizontal</item>
     </style>
 
-    <style name="RelativeItemStyle" >
+    <style name="RelativeItemStyle">
         <item name="android:background">@color/colorFon</item>
         <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
         <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
         <item name="layout_behavior">@string/appbar_scrolling_view_behavior</item>
     </style>
 
-    <style name="ItemIconStyle" >
+    <style name="ItemIconStyle">
         <item name="android:layout_weight">1</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
         <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
     </style>
 
-    <style name="LikeTextStyle" >
+    <style name="LikeTextStyle">
         <item name="android:layout_marginLeft">8dp</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textStyle">bold</item>
@@ -73,7 +73,7 @@
         <item name="android:alpha">0.23</item>
     </style>
 
-    <style name="TitleTextStyle" >
+    <style name="TitleTextStyle">
         <item name="android:lines">2</item>
         <item name="android:ellipsize">end</item>
         <item name="android:ems">3</item>
@@ -84,7 +84,7 @@
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
-    <style name="StreetTextStyle" >
+    <style name="StreetTextStyle">
         <item name="android:ellipsize">end</item>
         <item name="android:ems">3</item>
         <item name="android:maxLines">1</item>
@@ -92,7 +92,7 @@
         <item name="android:fontFamily">sans-serif</item>
     </style>
 
-    <style name="DateTextStyle" >
+    <style name="DateTextStyle">
         <item name="android:textStyle">bold</item>
         <item name="android:alpha">0.54</item>
         <item name="android:textColor">@color/black_87</item>
@@ -135,7 +135,7 @@
         <item name="android:layout_margin">@dimen/fab_margin</item>
         <item name="srcCompat">@drawable/ic_plus</item>
         <item name="backgroundTint">@color/mango</item>
-        <item name="layout_behavior">com.taras.secondapplication.ScrollingFABBehavior</item>
+        <item name="layout_behavior">com.taras.secondapplication.utils.ScrollingFABBehavior</item>
     </style>
 
     <!--Toolbar. -->
@@ -172,10 +172,6 @@
         <item name="android:background">@drawable/ic_gradient</item>
     </style>
 
-    <style name="ListViewStyle">
-        <item name="android:scrollbars">vertical</item>
-    </style>
-
     <style name="LineaerItemStyle">
         <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
         <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
@@ -184,6 +180,11 @@
         <item name="android:orientation">vertical</item>
     </style>
 
+    <style name="AvatarStyle">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:src">@mipmap/ic_launcher</item>
+    </style>
 
 
 </resources>
