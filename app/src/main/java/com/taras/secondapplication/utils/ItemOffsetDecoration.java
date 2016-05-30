@@ -1,4 +1,4 @@
-package com.taras.secondapplication;
+package com.taras.secondapplication.utils;
 
 import android.content.Context;
 import android.graphics.Rect;
