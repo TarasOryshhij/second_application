@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_tabs_title">
+        <item>@string/tab_in_work</item>
+        <item>@string/tab_complete</item>
+        <item>@string/tab_moderation</item>
+    </string-array>
+</resources>
